@@ -1,0 +1,28 @@
+title = "Plugin components"
+url = "/demo/plugins"
+layout = "default"
+
+[demoTodo]
+max = 3
+==
+
+<div class="row">
+    <div class="col-8">
+        <h1>Plugin components</h1>
+        <p>Plugins can provide components, simple building blocks that enrich any page or layout. Check out the todo example below.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    {% component 'demoTodo' %}
+</div>
+
+<!-- Page Explanation -->
+<div class="row">{% partial "explain/plugins.htm" %}</div>
+
+<br />
+
+<div class="row">
+    <p><a target="_blank" href="http://octobercms.com/docs" class="btn btn-lg btn-default">Learn more at October's Documentation</a></p>
+</div>
